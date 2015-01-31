@@ -1,0 +1,11 @@
+{
+  "name": "myhomeapp",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  }
+}
