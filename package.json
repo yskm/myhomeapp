@@ -2,7 +2,8 @@
   "name": "myhomeapp",
   "version": "0.0.0",
   "dependencies": {
-    "express": "^4.9.1"
+    "express": "^4.9.1",
+    "serialport": "^1.4.10"
   },
   "devDependencies": {},
   "scripts": {
