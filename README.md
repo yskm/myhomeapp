@@ -10,4 +10,4 @@
     $ ARDUINO_PORT={your arduino port name}
     
     # Start server
-    $ npm server
+    $ npm start
