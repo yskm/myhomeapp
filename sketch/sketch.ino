@@ -35,9 +35,9 @@ void loop() {
   }
   input[i] = 0;
 
-  if (strcmp(input, "on") == 0) {
+  if (strcmp(input, "ledon") == 0) {
     digitalWrite(LED_OUT, HIGH);
-  } else if (strcmp(input, "off") == 0) {
+  } else if (strcmp(input, "ledoff") == 0) {
     digitalWrite(LED_OUT, LOW);
   }
 }

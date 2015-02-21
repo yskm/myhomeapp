@@ -16,18 +16,16 @@ http.listen(3000, function() {
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/led/on', function(req, res) {
-    sp.write("on");
-    res.send('LED Turned on!');
-});
-
-app.get('/led/off', function(req, res) {
-    sp.write("off");
-    res.send('LED Turned off!');
-});
-
 io.on('connection', function(socket) {
     console.log('socket.io connected');
+
+    socket.on('ledon', function() {
+        sp.write("ledon");
+    });
+
+    socket.on('ledoff', function() {
+        sp.write("ledoff");
+    });
 });
 
 sp.on('data', function(input) {
