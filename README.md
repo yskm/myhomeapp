@@ -1,13 +1,18 @@
 # myhomeapp
 
-## Getting Started
+my home app using Arduino
 
+## Installation
 
-    # Install npm packages
+install modules:
+
     $ npm install
-    
-    # Configure your arduino port name
+    $ bower install
+
+export your arduino port name:
+
     $ export ARDUINO_PORT={your arduino port name}
-    
-    # Start server
+
+start app:
+
     $ npm start
