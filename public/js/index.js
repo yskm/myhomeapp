@@ -6,10 +6,7 @@ $(function() {
             columns: [
                 ['data', -100]
             ],
-            type: 'gauge',
-            onclick: function (d, i) { console.log("onclick", d, i); },
-            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+            type: 'gauge'
         },
         gauge: {
             label: {
@@ -25,7 +22,7 @@ $(function() {
             max: 45
         },
         color: {
-            pattern: ['#0030F6', '#60B044', '#F97600', '#FF0000'], // the three color levels for the percentage values.
+            pattern: ['#0030F6', '#60B044', '#F97600', '#FF0000'],
             threshold: {
                 values: [20, 28, 40]
             }
@@ -41,6 +38,16 @@ $(function() {
             columns: [['data', data]]
         });
 
+    });
+
+    $.fn.bootstrapSwitch.defaults.state = false;
+    $("input[name='my-checkbox']").bootstrapSwitch().on('switchChange.bootstrapSwitch', function(e, state) {
+        console.log(state);
+        if (state === true) {
+            socket.emit('ledon');
+        } else if (state === false) {
+            socket.emit('ledoff');
+        }
     });
 
     $('#ledon').on('click', function() {

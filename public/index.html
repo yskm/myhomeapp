@@ -2,13 +2,19 @@
 <head>
     <title>myhomeapp</title>
     <link rel="stylesheet" href="/bower_components/c3/c3.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
 </head>
 <body>
-    <p>led:&nbsp;<a href="javascript:void(0);" id="ledon">ON</a>&nbsp;/&nbsp;<a href="javascript:void(0);" id="ledoff">OFF</a></p>
-    <p>temp:</p>
+    <h2>led:</h2>
+    <div style="height: 32px; margin-left: 50px;">
+        <input type="checkbox" name="my-checkbox" style="display:none;">
+    </div>
+    <h2>temp:</h2>
     <div id="chart"></div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
     <script src="/bower_components/d3/d3.min.js"></script>
     <script src="/bower_components/c3/c3.min.js"></script>
     <script src="/js/index.js"></script>
