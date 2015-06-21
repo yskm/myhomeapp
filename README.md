@@ -8,7 +8,7 @@ my home app using Arduino
 
 prepare Arduino:
 
-![myhomeapp](https://cloud.githubusercontent.com/assets/1866767/8148874/e166ba00-12ea-11e5-80d6-506d3058598c.png)
+![myhomeapp](https://cloud.githubusercontent.com/assets/1866767/8272714/54317974-1888-11e5-87b3-b03e5d1e6097.png)
 
 upload the sketch `sketch/sketch.ino` to the Arduino board.
 
